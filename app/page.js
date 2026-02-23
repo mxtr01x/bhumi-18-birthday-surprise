@@ -67,17 +67,25 @@ export default function BirthdaySurprise() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <h1 style={styles.h1}>Happy 18th Birthday Bhumi 🎂</h1>
             <p style={styles.p}>Welcome to your special day. I made something just for you 💙</p>
-            <button onClick={nextStage} style={styles.btnPrimary}>Click Meeee</button>
+            <button onClick={nextStage} style={styles.btnPrimary}>Enter Your World ✨</button>
           </motion.div>
         )}
 
         {stage === 2 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            <h2 style={styles.h2}> My Dumboo ✨</h2>
+            <h2 style={styles.h2}>My Dumbo 💙</h2>
+
             <div style={styles.slideWrap}>
-              <img src={images[index]} alt="memory" style={styles.slideImg} />
+              <img
+                src={images[index]}
+                alt="memory"
+                style={styles.slideImg}
+              />
             </div>
-            <button onClick={nextStage} style={{...styles.btnPrimary, marginTop: 16}}>Read Message</button>
+
+            <button onClick={nextStage} style={{...styles.btnPrimary, marginTop: 16}}>
+              Read My Heart 💌
+            </button>
           </motion.div>
         )}
 
@@ -93,7 +101,9 @@ export default function BirthdaySurprise() {
               “In a world full of waves and noise, you are my calm sea — the place I always feel at home.”
             </blockquote>
             <div style={styles.signature}>With love, Shreyaa 💙</div>
-            <button onClick={nextStage} style={{...styles.btnPrimary, marginTop: 16}}>Final Surprise</button>
+            <button onClick={nextStage} style={{...styles.btnPrimary, marginTop: 16}}>
+              Final Surprise 🎉
+            </button>
           </motion.div>
         )}
 
@@ -182,10 +192,12 @@ const styles = {
     borderRadius: 14,
     overflow: "hidden",
     border: "1px solid rgba(255,255,255,0.15)",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.4)"
   },
   slideImg: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    objectPosition: "top center",
   },
 };
