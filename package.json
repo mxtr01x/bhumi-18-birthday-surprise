@@ -1,0 +1,17 @@
+{
+  "name": "bhumi-birthday-surprise",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.292.0",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}
