@@ -326,3 +326,4 @@ const styles = {
     animation: "zoomPan 4s ease-in-out forwards",
   },
 };
+       
