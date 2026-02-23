@@ -4,13 +4,12 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Music } from "lucide-react";
 
+/* --------- IMAGE DATA WITH CUSTOM CROP (2 & 6 removed) --------- */
 const images = [
   { src: "/images/1.jpg", pos: "center 20%" },
-  { src: "/images/2.jpg", pos: "center 10%" },
   { src: "/images/3.jpg", pos: "center 25%" },
   { src: "/images/4.jpg", pos: "center 30%" },
   { src: "/images/5.jpg", pos: "center 15%" },
-  { src: "/images/6.jpg", pos: "center 10%" },
   { src: "/images/7.jpg", pos: "center 25%" },
 ];
 
@@ -128,7 +127,6 @@ export default function BirthdaySurprise() {
 
             <div style={styles.footer}>— Shreyaa 💙</div>
 
-            {/* CONFETTI (click-through now) */}
             {[...Array(25)].map((_, i) => (
               <div
                 key={i}
@@ -140,7 +138,7 @@ export default function BirthdaySurprise() {
                   height: 10,
                   background: ["#4fc3f7","#81d4fa","#0288d1"][i%3],
                   animation: `confetti ${3 + Math.random()*2}s linear infinite`,
-                  pointerEvents: "none"   // 🔥 IMPORTANT FIX
+                  pointerEvents: "none"
                 }}
               />
             ))}
@@ -163,7 +161,6 @@ const styles = {
     background: "#000",
     fontFamily: "system-ui",
   },
-
   ocean: {
     position: "absolute",
     inset: 0,
@@ -171,7 +168,6 @@ const styles = {
     backgroundSize: "200% 200%",
     animation: "waveMove 18s linear infinite",
   },
-
   bubble: {
     position: "absolute",
     bottom: "-20px",
@@ -181,9 +177,7 @@ const styles = {
     background: "rgba(173,216,230,0.7)",
     animation: "floatUp 12s linear infinite",
   },
-
   musicWrap: { position: "absolute", top: 16, right: 16 },
-
   card: {
     position: "relative",
     zIndex: 2,
@@ -194,12 +188,10 @@ const styles = {
     padding: 24,
     textAlign: "center",
   },
-
   h1: { fontSize: 32, fontWeight: 700 },
   h2: { fontSize: 24, fontWeight: 600 },
   p: { color: "#cfe8ff", marginBottom: 16 },
   pBig: { color: "#d8f0ff", lineHeight: 1.7, textAlign: "left" },
-
   quote: {
     marginTop: 12,
     fontStyle: "italic",
@@ -207,10 +199,8 @@ const styles = {
     borderLeft: "3px solid #5fb3ff",
     paddingLeft: 10,
   },
-
   signature: { marginTop: 10, fontWeight: 600, color: "#bfe3ff" },
   footer: { marginTop: 8, color: "#bfe3ff" },
-
   btnPrimary: {
     background: "#0a6ea8",
     color: "#fff",
@@ -219,14 +209,12 @@ const styles = {
     padding: "10px 16px",
     cursor: "pointer",
   },
-
   slideWrap: {
     width: "100%",
     height: 360,
     overflow: "hidden",
     borderRadius: 14,
   },
-
   slideImg: {
     width: "100%",
     height: "100%",
