@@ -67,13 +67,13 @@ export default function BirthdaySurprise() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <h1 style={styles.h1}>Happy 18th Birthday Bhumi 🎂</h1>
             <p style={styles.p}>Welcome to your special day. I made something just for you 💙</p>
-            <button onClick={nextStage} style={styles.btnPrimary}>See Memories</button>
+            <button onClick={nextStage} style={styles.btnPrimary}>Click Meeee</button>
           </motion.div>
         )}
 
         {stage === 2 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-            <h2 style={styles.h2}>Our Memories ✨</h2>
+            <h2 style={styles.h2}> My Dumboo ✨</h2>
             <div style={styles.slideWrap}>
               <img src={images[index]} alt="memory" style={styles.slideImg} />
             </div>
